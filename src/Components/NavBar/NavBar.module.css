@@ -1,0 +1,23 @@
+.containerNavbar {
+  width: 100%;
+  color: aliceblue;
+  height: 10vh;
+  background: rgb(65, 174, 199);
+  background: linear-gradient(
+    180deg,
+    rgba(65, 174, 199, 0.9697128851540616) 14%,
+    rgba(36, 48, 60, 1) 98%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  cursor: pointer;
+}
