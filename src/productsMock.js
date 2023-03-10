@@ -1,0 +1,42 @@
+export const product = [
+  {
+    id: 1,
+    name: "nike 1",
+    price: 14000,
+    description: "las mejores",
+    stock: 4,
+    category: "urbanas",
+  },
+  {
+    id: 2,
+    name: "nike 2",
+    price: 15000,
+    description: "las mejores",
+    stock: 4,
+    category: "deportivas",
+  },
+  {
+    id: 3,
+    name: "nike 3",
+    price: 16000,
+    description: "las mejores",
+    stock: 4,
+    category: "urbanas",
+  },
+  {
+    id: 4,
+    name: "nike 4",
+    price: 17000,
+    description: "las mejores",
+    stock: 4,
+    category: "deportivas",
+  },
+  {
+    id: 5,
+    name: "nike 5",
+    price: 18000,
+    description: "las mejores",
+    stock: 4,
+    category: "deportivas",
+  },
+];
