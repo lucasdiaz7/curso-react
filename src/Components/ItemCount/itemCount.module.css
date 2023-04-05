@@ -1,0 +1,30 @@
+.count{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.btn{
+    cursor: pointer;
+    font-size: 17px;
+    margin: 4px;
+}
+
+.btn:hover{
+    background: #292828e8;
+    color: white;
+}
+
+.btnCarrito{
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    background: #e2e2e2;
+    border-radius: 10px;
+}
+.btnCarrito:hover{
+    transform: translateY(2px);
+    background: #292828e8;
+    /* background: #b3a8ab; */
+    color: white;
+}

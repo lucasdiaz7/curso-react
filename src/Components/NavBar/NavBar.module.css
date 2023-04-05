@@ -3,12 +3,12 @@
   color: aliceblue;
   text-decoration: none;
   height: 10vh;
-  background: rgb(65, 174, 199);
-  background: linear-gradient(
+  background: #292828e8;
+  /* background: linear-gradient(
     180deg,
-    rgba(65, 174, 199, 0.9697128851540616) 14%,
+    #7c7577,
     rgba(36, 48, 60, 1) 98%
-  );
+  ); */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,4 +22,12 @@
   gap: 30px;
   list-style: none;
   cursor: pointer;
+}
+
+.img{
+  width: 175px;
+  height: 140px;
+}
+.h2{
+  margin-left: 15px;
 }

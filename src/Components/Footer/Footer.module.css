@@ -1,0 +1,23 @@
+.footgral{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: #292828e8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.icon{
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}

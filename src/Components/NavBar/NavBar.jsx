@@ -6,21 +6,9 @@ export default function NavBar() {
   return (
     <div className={style.containerNavbar}>
       <Link to="/">
-        <h3>Logo</h3>
+        <img src="https://res.cloudinary.com/dmgvv9nbt/image/upload/v1680536650/curso-react/logo/Logo_sobre_moda_femenina_minimalista_neutral_2_z8maay-removebg-preview_ok0qqd.png" alt="" className={style.img} />
       </Link>
-      <h2>Nombre del proyecto</h2>
-
-      <ul className={style.containerList}>
-        <Link to="/">
-          <li>Todas</li>
-        </Link>
-        <Link to="/category/urbanas">
-          <li>Urbanas</li>
-        </Link>
-        <Link to="/category/deportivas">
-          <li>Deportivas</li>
-        </Link>
-      </ul>
+      {/* <h2 className={style.h2} >Nombre del proyecto</h2> */}
       <Link to="/cart">
         <CartWidget />
       </Link>
