@@ -1,21 +1,11 @@
 import React, { useContext, useState } from "react";
 import { CartContext } from "../../Context/CartContext";
-// import Table from "@mui/material/Table";
-// import TableBody from "@mui/material/TableBody";
-// import TableCell from "@mui/material/TableCell";
-// import TableContainer from "@mui/material/TableContainer";
-// import TableHead from "@mui/material/TableHead";
-// import TableRow from "@mui/material/TableRow";
-// import Paper from "@mui/material/Paper";
 import { Link } from "react-router-dom";
-// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import style from "./Cart.module.css"
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
 import Swal from "sweetalert2";
 import Form from "../Form/Form";
-
-//----muevo----
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -29,7 +19,7 @@ import Button from '@mui/material/Button';
 
 
 const Cart = () => {
-  const { cart, priceTotal, deletProduct} = useContext(CartContext);
+  const { cart, priceTotal, deletProduct, limpiarCarro} = useContext(CartContext);
   const priceTot = priceTotal()
   const[form, setForm] = useState(false)
   const [orderId, setOrderId] = useState(null)
@@ -57,7 +47,7 @@ const Cart = () => {
         <h1>Gracias por su compra</h1>
         <h4>Su numero de comprobante es: {orderId}</h4>
         <Link to="/">
-          <button className={style.btnCompr}>Seguir comprando</button>
+          <button className={style.btnCompr} onClick={limpiarCarro}>Seguir comprando</button>
         </Link>
       </div>
     )
@@ -110,18 +100,14 @@ const Cart = () => {
       </TableContainer>
               </div>
               <div className={style.compra}>
-                <TableRow className={style.prec}>
+                <div className={style.prec}>
                   <TableCell className={style.tCell} >SubTotal:</TableCell>
                   <TableCell >{priceTot}</TableCell>
-                </TableRow  >
-                {/* <TableRow sx={{position: "right", width: "80%",backgroundColor: "#e2e2e2"}} >
-                  <TableCell className={style.tCell}  >Descuento:</TableCell>
-                  <TableCell  >-</TableCell>
-                </TableRow> */}
-                <TableRow className={style.prec}>
+                </div  >
+                <div className={style.prec}>
                   <TableCell className={style.tCell}  colSpan={2}>Total</TableCell>
                   <TableCell >{priceTot}</TableCell>
-                </TableRow>
+                </div>
                 <Stack sx={{display:"flex", justifyContent: "flex-end"}} spacing={2} direction="row">
                   <Button sx={{marginRight: "10px", width: "210px"}} className={style.btnFinalizar} variant="outlined" onClick={()=> setForm(true)}>Finalizar Compra</Button>
                 </Stack>

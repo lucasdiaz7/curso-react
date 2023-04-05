@@ -124,7 +124,7 @@ const Form = ({cart, priceTotal, setOrderId, setForm}) => {
         <Button variant="outlined" color="error" onClick={() => setForm(false)}>
             Cancelar
         </Button>
-        <Button variant="outlined" type="submit">Comprar</Button>
+        <Button className={style.btnC} variant="outlined" type="submit">Comprar</Button>
       </Stack>
     </Box>
   );

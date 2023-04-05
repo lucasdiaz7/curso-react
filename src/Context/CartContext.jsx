@@ -45,13 +45,18 @@ const CartContextProvider = ({ children }) => {
      setCart(newCart)
   }
 
+  const limpiarCarro = () =>{
+    setCart([])
+  }
+
   let data = {
     cart,
     setCart,
     agregarAlCarrito,
     getQuantity, 
     priceTotal,
-    deletProduct
+    deletProduct,
+    limpiarCarro
   };
 
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;

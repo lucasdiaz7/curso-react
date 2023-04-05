@@ -35,11 +35,6 @@
   align-items: center;
   
 }
-.tCell{
-  width: 13% !important;
-}
-
-
 .comprobante{
   display: flex;
   flex-direction: column;
@@ -59,7 +54,7 @@
 }
 .btnCompr:hover{
   transform: translateY(2px);
-  background: #292828e8;
+  background: #292828e8 !important;
   color: white;
 }
 
@@ -81,6 +76,6 @@
 
 .btnFinalizar:hover{
   transform: translateY(2px);
-  background: #292828e8;
+  background: #292828e8 !important;
   color: white;
 }
